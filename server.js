@@ -3,12 +3,13 @@ const nodemailer = require("nodemailer");
 const cors = require("cors");
 require("dotenv").config();
 
-const app = express(); // ✅ You missed this line
+const cors = require("cors");
 
 app.use(cors({
-  origin: process.env.CORS_ORIGIN, // e.g., http://localhost:3000
+  origin: "https://sagarmasale.vercel.app",
   credentials: true,
 }));
+
 app.use(express.json());
 
 app.post("/api/send", async (req, res) => {
