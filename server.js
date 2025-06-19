@@ -7,7 +7,7 @@ const app = express(); // ✅ Added this line
 
 
 app.use(cors({
-  origin: process.env.CORS_ORIGIN,
+  origin: "https://sagarmasale.vercel.app",
   credentials: true,
 }));
 
