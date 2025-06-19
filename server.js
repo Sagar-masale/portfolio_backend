@@ -3,8 +3,9 @@ const nodemailer = require("nodemailer");
 const cors = require("cors");
 require("dotenv").config();
 
-const cors = require("cors");
+const app = express(); // ✅ Added this line
 
+// ✅ CORS Configuration
 app.use(cors({
   origin: "https://sagarmasale.vercel.app",
   credentials: true,
