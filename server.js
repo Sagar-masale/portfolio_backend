@@ -5,9 +5,9 @@ require("dotenv").config();
 
 const app = express(); // ✅ Added this line
 
-// ✅ CORS Configuration
+
 app.use(cors({
-  origin: "https://sagarmasale.vercel.app",
+  origin: process.env.CORS_ORIGIN,
   credentials: true,
 }));
 
